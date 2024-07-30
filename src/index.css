@@ -1,0 +1,25 @@
+@import url(null.css);
+
+:root {
+	--font-family: "Roboto", sans-serif;
+	--second-font-family: "EB Garamond", serif;
+	--montserrat-family: "Montserrat", sans-serif;
+	--montserrat-alt-family: "Montserrat Alternates", sans-serif;
+	--oswald-family: "Oswald", sans-serif;
+
+	--text-color: #abaeb7;
+	--white-color: #fff;
+	--red-color: #E72222;
+	/* --backgorung-color: #0B0E17; */
+	--backgorung-color: #181a22;;
+}
+
+body {
+	font-family: var(--font-family);
+	background-color: var(--backgorung-color);
+}
+
+.container-header {
+	max-width: 1470px;
+	margin: 0 auto;
+}

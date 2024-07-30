@@ -1,0 +1,196 @@
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	z-index: 1000;
+ }
+ 
+ .modal-content {
+	background: #181A22;
+	border-radius: 15px;
+	width: 90%;
+	max-width: 1000px;
+	height: 80%; 
+	/* max-height: 940px; */
+	position: relative;
+	overflow: hidden;
+	overflow-y: auto;
+ }
+ 
+ .close {
+	position: absolute;
+	top: 0px;
+	right: 5px;
+	background: none;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+	z-index: 1;
+	color: #000;
+ }
+ 
+ .modal-image {
+	width: 100%;
+	height: 50%; /* Adjust height as needed */
+	object-fit: cover; /* Ensures the image covers the area without stretching */
+ }
+ 
+ .modal-details {
+	display: flex;
+	flex: 1;
+	padding: 20px;
+	overflow-y: auto;
+ }
+ 
+ .modal-left {
+	flex: 1;
+	padding-right: 10px;
+	border-right: 1px solid #575656;
+
+ }
+ 
+ .modal-title {
+	font-family: var(--montserrat-family);
+	font-weight: 800;
+	font-size: 32px;
+	color: #fff;
+	/* margin-bottom: 5px; */
+ }
+ 
+ .modal-subtitle {
+	font-family: var(--oswald-family);
+	font-weight: 600;
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 15px;
+ }
+
+ .services-title {
+	font-family: var(--font-family);
+	font-weight: 800;
+	font-size: 32px;
+	color: #fff;
+	margin-bottom: 5px;
+	text-align: center;
+ }
+ 
+ .modal-description {
+	font-family: var(--montserrat-alt-family);
+	font-weight: 600;
+	font-size: 15px;
+	color: #fff;
+ }
+ 
+ .modal-right {
+	flex: 1;
+	padding-left: 20px;
+	border-left: 2px solid #575656;
+ }
+ 
+ .services-list li,
+ .additional-services li {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 0;
+ }
+
+
+.additional-services {
+	font-family: var(--montserrat-alt-family);
+	font-weight: 600;
+	font-size: 13px;
+	color: #fff;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+.additional-services li {
+	list-style: disc outside  !important;
+	/* margin-bottom: 3px; */
+}
+ 
+ .service-title {
+	font-family: var(--montserrat-family);
+	font-weight: 600;
+	font-size: 16px;
+	color: #fff;
+ }
+ 
+ .service-price {
+	font-family: var(--montserrat-family);
+	font-weight: 400;
+	font-size: 14px;
+	color: #fff;
+ }
+
+ .additional-services-title {
+	font-family: var(--montserrat-family);
+	font-weight: 700;
+	font-size: 18px;
+	color: #fff;
+ }
+ 
+ .submit-button {
+	font-family: var(--montserrat-family);
+	font-weight: 800;
+	font-size: 16px;
+	color: #000;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	background-color: #fff;
+ }
+ 
+ .submit-button:hover {
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.7);
+ }
+ 
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+	.modal-content {
+	  height: 90%;
+	  max-height: none;
+	  width: 95%;
+	}
+ 
+	.modal-details {
+	  flex-direction: column;
+	}
+ 
+	.modal-left, .modal-right {
+	  padding: 10px;
+	}
+ 
+	.modal-right {
+	  padding-top: 20px;
+	}
+ }
+ 
+ @media (max-width: 480px) {
+	.modal-title {
+	  font-size: 20px;
+	}
+ 
+	.modal-subtitle {
+	  font-size: 16px;
+	}
+ 
+	.modal-description {
+	  font-size: 14px;
+	}
+ 
+	.submit-button {
+	  padding: 8px 16px;
+	  font-size: 14px;
+	}
+ }

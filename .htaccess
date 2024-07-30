@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteCond %{HTTP:Upgrade} =websocket [NC]
+RewriteRule /(.*) ws://localhost:4000/$1 [P,L]
+RewriteCond %{HTTP:Upgrade} !=websocket [NC]
+RewriteRule /(.*) http://localhost:4000/$1 [P,L]
+
+ProxyPass / http://localhost:4000/
+ProxyPassReverse / http://localhost:4000/
+
+

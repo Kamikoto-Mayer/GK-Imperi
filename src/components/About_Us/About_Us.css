@@ -1,0 +1,175 @@
+/* src/components/AboutUs.css */
+.about {
+	color: #fff;
+	padding: 60px 0;
+ }
+ 
+ .about .container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+ }
+ 
+ .about__content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+ }
+ 
+ .about__text {
+	flex: 1 1 45%;
+ }
+ 
+ .about__text h2 {
+	font-size: 36px;
+	margin-bottom: 20px;
+	position: relative;
+ }
+ 
+ .about__text h2::after {
+	content: '';
+	display: block;
+	width: 60px;
+	height: 2px;
+	background: #fff;
+	margin: 20px 0 0;
+ }
+ 
+ .about__text p {
+	font-size: 18px;
+	line-height: 1.6;
+ }
+ 
+ .about__stats {
+	font-size: 48px;
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+ }
+ 
+ .about__stats h3 {
+	margin: 0;
+	font-size: 3em;
+ }
+ 
+ .about__stats p {
+	margin-left: 10px;
+	font-size: 1.2em;
+ }
+ 
+ .about__images {
+	flex: 1 1 45%;
+	display: flex;
+	/* flex-wrap: wrap; */
+	justify-content: space-between;
+	gap: 20px;
+ }
+ 
+ .about__image {
+	border: 1px solid #333;
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	opacity: 0.8;
+ }
+ .about__image:first-child {
+	margin-bottom: 30px;
+  }
+.about__image:last-child {
+	margin-top: 30px;
+}
+ 
+/* Адаптивные стили */
+
+@media (max-width: 1200px) {
+	.about__text h2 {
+		font-size: 32px;
+	}
+
+	.about__text p {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 992px) {
+	.about__text h2 {
+		font-size: 28px;
+	}
+
+	.about__text p {
+		font-size: 14px;
+	}
+
+	.about__stats h3 {
+		font-size: 2.5em;
+	}
+
+	.about__stats p {
+		font-size: 1em;
+	}
+}
+
+@media (max-width: 768px) {
+	.about__content {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.about__text, .about__images {
+		flex: 1 1 100%;
+		text-align: center;
+	}
+
+	.about__images {
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	.about__image {
+		width: 48%;
+		margin-bottom: 0;
+	}
+
+	.about__image:first-child, .about__image:last-child {
+		margin: 0;
+	}
+	.about__text h2::after{
+		margin: 10px auto;
+	}
+}
+
+@media (max-width: 576px) {
+	.about__text h2 {
+		font-size: 24px;
+	}
+
+	.about__text p {
+		font-size: 12px;
+	}
+
+	.about__stats {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.about__stats h3 {
+		font-size: 2em;
+	}
+
+	.about__stats p {
+		font-size: 0.8em;
+		text-align: center;
+	}
+
+	.about__images {
+		flex-direction: column;
+	}
+
+	.about__image {
+		width: 100%;
+	}
+}
+ 
